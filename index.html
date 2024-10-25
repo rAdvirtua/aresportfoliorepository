@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>Ujaan.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fa-times" aria-hidden="true" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa fa-bars" aria-hidden="true" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Web Developer</p>
+                <h1><span>Ujaan Mukherjee</span><br>IEM Newtown</h1>
+            </div>
+        </div>
+    </div> 
+    <!---------about me-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="6334182.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I'm your go to Full Stack Web Developer with in-depth and practical experience with HTML, CSS, JavaScript, ReactJs, MongoDB, SQL, NodeJs, ExpressJs and much more. Contact me on Instagram, Twitter or LinkedIn!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Designing Websites</li>
+                            <li><span>App Development</span><br>Building Android/iOS Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Paper/Patent Publications</span><br>Black Holes and Dark Matter</li>
+                            <li><span>Courses Completed</span><br>Google AI Essentials (100% Grade)</li>
+                            <li><span>Membership</span><br>UEMK Coding Club (want to be)<br>GDG UEMK GenAI Study Jam</li>
+                            <li><span>List of Events(Organized/Attended)</span><br>ELEVATE 2k24 by IEEE</li>
+                            <li><span>Awards and Achievements</span><br>still on the way to win.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024 - 2028</span><br>B.Tech. from IEM Newtown</li>
+                            <li><span>2011 - 2024</span><br>High School Diploma from Don Bosco School, Liluah</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- ------services------ -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                    <h2>Web Design</h2>
+                    <p>Tired of a website that's as dull as yesterday's news? Ready to captivate your audience and drive real results? My expert web design services are here to transform your digital landscape. From sleek, modern designs to user-friendly interfaces, I will craft websites that leave a lasting impression. With a keen eye for detail and a passion for innovation, I'll create a website that reflects your brand's unique identity and helps you achieve your business goals. Don't settle for mediocrity – invest in a website that truly stands out.</p>
+                    <a href="#contact">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa fa-crop" aria-hidden="true"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>In today's fast-paced digital world, a seamless and engaging user experience is paramount. My expert UI/UX design services transform complex interactions into intuitive and delightful journeys. By understanding your target audience and business objectives, I will craft visually stunning and functionally superior designs that captivate and convert. From wireframing and prototyping to pixel-perfect design, I meticulously optimize every aspect of your digital product to ensure maximum user satisfaction and business success.</p>
+                    <a href="#contact">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa fa-android" aria-hidden="true"></i>
+                    <h2>App Design</h2>
+                    <p>In today's mobile-first world, a well-designed app can be the key to unlocking new opportunities and reaching a wider audience. My app design services bring your mobile vision to life, creating intuitive and engaging experiences that leave a lasting impression. From concept to launch, I will meticulously craft every aspect of your app, including stunning visuals, seamless navigation, and optimized performance. With a focus on user-centric design, I'll ensure your app stands out in a crowded marketplace and delivers exceptional value to your users.</p>
+                    <a href="#contact">Learn More</a>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- ------portfolio----- -->
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around you.
+                        Download Now!</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Stream, discover, and enjoy your favorite music, all in one app.
+                        Download Now!</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Shop anytime, anywhere with our easy-to-use app.
+                        Download Now!</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+      </div>
+      <!-- -----contact------ -->
+       <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa fa-paper-plane-o" aria-hidden="true"></i>ujaan.mukherjee21@gmail.com</p>
+                    <p><i class="fa fa-phone-square" aria-hidden="true"></i>8240083449</p>
+                    <div class="social-icons">
+                        <a href="https://x.com/AreS_2176"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/ujaanmukherjee21"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/keseraph"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                    <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="E-Mail" placeholder="Your E-Mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Ujaan. Made By Ujaan The GOAT.</p>
+            </div>
+        </div>
+       </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname)
+        {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx6by_iq9YxvUSgbqjuIVJaTUjh9PgF92BSJ9Yshk3CeZgRC6jL3TonRcBSmKL3esQ5Xg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message Sent Successfully!"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
